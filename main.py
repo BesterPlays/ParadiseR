@@ -2,8 +2,10 @@ import os
 import discord
 from discord import app_commands
 from discord.ext import commands
+from dotenv import load_dotenv
 
-TOKEN = "MTU0MzAzNTYzMTA2MjYxODIyMw.GPg8FD.nWsLkHHJvWaN_KIIjtvqomGT6pBqO_mnRU4EvU"
+load_dotenv()
+TOKEN = os.getenv("TOKEN")
 DISCORD_URL = "discord.gg/4EWvEqmAcc"
 INVITE = DISCORD_URL    
 TOOL_NAME = "PARADISE"
